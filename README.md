@@ -1,6 +1,6 @@
 # Proyecto de Streaming de Películas
 
-Este es un proyecto básico de una aplicación de streaming de películas desarrollado con Node.js, Express y Nodemon.
+Este es un proyecto básico de una aplicación de streaming de películas desarrollado con Node.js y Express.
 
 ## Descripción
 
@@ -9,29 +9,45 @@ La aplicación permite gestionar usuarios y películas mediante una API RESTful.
 ## Contenidos
 
 - [Instalación](#instalación)
+- [Trabajar con Ramas Específicas](#trabajar-con-ramas-específicas)
 - [Uso](#uso)
+- [Actualización](#actualización)
+- [Notas Adicionales](#notas-adicionales)
 - [Rutas Disponibles](#rutas-disponibles)
   - [Usuarios](#usuarios)
   - [Películas](#películas)
-- [Licencia](#licencia)
+
+---
 
 ## Instalación
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/FrijolitoRaza/CaC-24129-NodeJS_Express_G10.git
+    git clone https://github.com/FrijolitoRaza/CaC-24129.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd CaC-24129-NodeJS_Express_G10
+    cd CaC-24129
     ```
 
 3. Instala las dependencias:
     ```bash
-    npm install
+    npm i
     ```
+    
+## Trabajar con Ramas Específicas
 
+### 1. Crear una Nueva Rama
+    ```bash
+    git checkout -b <branch-name>
+    ```
+    
+### 2. Verificar la Rama Actual
+    ```bash
+    git branch
+    ```
+    
 ## Uso
 
 1. Inicia la aplicación en modo desarrollo:
@@ -40,6 +56,65 @@ La aplicación permite gestionar usuarios y películas mediante una API RESTful.
     ```
 
 2. La aplicación estará corriendo en `http://localhost:3000`.
+
+## Actualización
+
+### 1. Realiza Cambios en los Archivos
+
+Edita los archivos del proyecto según sea necesario. Por ejemplo, puedes editar el archivo `README.md`.
+
+### 2. Verificar el Estado del Repositorio
+
+1. Verifica el estado del repositorio para ver los archivos modificados:
+
+    ```bash
+    git status
+    ```
+
+### 3. Agregar los Cambios al Área de Preparación
+
+1. Para agregar un archivo específico (por ejemplo, `README.md`):
+
+    ```bash
+    git add README.md
+    ```
+
+2. Para agregar todos los cambios realizados:
+
+    ```bash
+    git add .
+    ```
+
+### 5. Hacer un Commit de los Cambios
+
+1. Realiza un commit con un mensaje descriptivo:
+
+    ```bash
+    git commit -m "Descripción de los cambios realizados"
+    ```
+
+### 6. Sincronizar con el Repositorio Remoto
+
+1. Antes de subir tus cambios, es una buena práctica actualizar tu rama local con los cambios del repositorio remoto para evitar conflictos:
+
+    ```bash
+    git pull origin <branch-name>     #<branch-name> es un nombre de la brach de ejemplo.
+    ```
+
+2. Sube los cambios a la rama `<branch-name>` del repositorio remoto:
+
+    ```bash
+    git push origin <branch-name>
+    ```
+    
+## Notas Adicionales
+
+- **Branching**: Siempre asegúrate de estar trabajando en la rama correcta. Puedes verificar la rama actual con `git branch` y cambiar de rama con `git checkout <branch-name>`.
+
+- **Conflictos**: Si encuentras conflictos al hacer `git pull`, resuélvelos antes de hacer `git push`. Visual Studio Code ofrece herramientas visuales para resolver conflictos de manera amigable.
+
+- **Revisiones**: Es una buena práctica revisar los cambios antes de hacer un commit. Puedes usar `git diff` para ver los cambios que se han hecho.
+
 
 ## Rutas Disponibles
 
@@ -99,7 +174,5 @@ La aplicación permite gestionar usuarios y películas mediante una API RESTful.
   
   Elimina la película con el ID especificado.
 
-## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
 # CaC-24129-NodeJS_Express_G10
